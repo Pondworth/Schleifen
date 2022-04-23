@@ -37,7 +37,33 @@ namespace Schleifen
 
 
             //For-Schleifen
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i);
+            }
 
+            string[,] products = new string[,]
+            {
+                {
+                    "Apfel",
+                    "PCGames",
+                    "Schokolade"
+                },
+                {
+                    "Lebensmittel",
+                    "Zeitschrift",
+                    "Lebensmittel"
+                }
+
+            };
+
+            for(int zeile = 0; zeile < products.GetLength(1); zeile++)
+            {
+                for(int spalte = 0; spalte < products.GetLength(0); spalte++)
+                {
+                    Console.WriteLine(products[spalte, zeile]);
+                }
+            }
             Console.ReadKey();
         }
 
