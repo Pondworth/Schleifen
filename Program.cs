@@ -64,7 +64,24 @@ namespace Schleifen
                     Console.Write(products[spalte, zeile]);
                     Console.Write(" ");
                 }
+                //Für den Zeilenumbruch
                 Console.WriteLine();
+            }
+
+            //Foreach (nicht überschreibbar, nur lesbar)
+            string[] names = new string[]
+            {
+                "Alina",
+                "Babara",
+                "Samantha",
+                "Zoey",
+                "Marcel",
+                "Erik"
+            };
+
+            foreach(string name in names)
+            {
+                Console.WriteLine(name);
             }
             Console.ReadKey();
         }
