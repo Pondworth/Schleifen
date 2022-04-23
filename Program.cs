@@ -83,6 +83,31 @@ namespace Schleifen
             {
                 Console.WriteLine(name);
             }
+            //break (damit kann man eine Schleife unterbrechen)
+            int zahlbreak = 1;
+
+            while (zahlbreak <= 10)
+            {
+                Console.WriteLine(zahlbreak);
+                if(zahlbreak == 6)
+                {
+                    break;
+                }
+                zahlbreak++;
+            }
+            //continue
+            int zahlcontinue = 0;
+
+            while (zahlcontinue <= 10)
+            {
+                zahlcontinue++;
+                if(zahlcontinue == 6)
+                {
+                    continue;
+                }
+                Console.WriteLine(zahlcontinue);
+            }
+
             Console.ReadKey();
         }
 
