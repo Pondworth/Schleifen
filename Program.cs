@@ -61,8 +61,10 @@ namespace Schleifen
             {
                 for(int spalte = 0; spalte < products.GetLength(0); spalte++)
                 {
-                    Console.WriteLine(products[spalte, zeile]);
+                    Console.Write(products[spalte, zeile]);
+                    Console.Write(" ");
                 }
+                Console.WriteLine();
             }
             Console.ReadKey();
         }
